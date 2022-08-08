@@ -2,7 +2,6 @@
 
 This is a Heroku buildpack for WKhtmltoPDF binary with your environment. It is compatible with only Heroku Stack 22. 
 
-`wkhtmltoimage` binary is not included in this buildpack. It will be downloaded from https://wkhtmltopdf.org/downloads.html
 
 ## Versions
 
