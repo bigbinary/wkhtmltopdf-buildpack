@@ -1,17 +1,15 @@
 # wkhtmltopdf Buildpack
 
-This is a [Heroku buildpack][0] for bundling a compatible [wkhtmltopdf][1] binary with your environment.
+This is a Heroku buildpack for WKhtmltoPDF binary with your environment. It is compatible with only Heroku Stack 22. 
 
-`wkhtmltoimage` binary is not included in this buildpack.
+`wkhtmltoimage` binary is not included in this buildpack. It will be downloaded from https://wkhtmltopdf.org/downloads.html
 
 ## Versions
 
-* Buildpack:   `0.2`
-* wkhtmltopdf: `0.12.5`
+* wkhtmltopdf: `0.12.6`
 
 ## Usage
 
-This buildpack only installs wkhtmltopdf, it isn't very useful by itself. You'll probably want to use add it to you current buildpacks config.
 
 ```bash
 $ heroku buildpacks:add https://github.com/bigbinary/wkhtmltopdf-buildpack.git
@@ -26,5 +24,3 @@ $ heroku plugins:install https://github.com/heroku/heroku-repo.git
 $ heroku repo:purge_cache -a appname
 ```
 
-[0]: http://devcenter.heroku.com/articles/buildpacks
-[1]: http://wkhtmltopdf.org/
